@@ -1,0 +1,3177 @@
+{
+  "took": 1655,
+  "timed_out": false,
+  "_shards": {
+    "total": 511,
+    "successful": 501,
+    "failed": 10,
+    "failures": [
+      {
+        "index": "pm-test-static-2016.02.10",
+        "shard": 0,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-03fdb1f4][inet[/172.31.1.222:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.10][0]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.10] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.11",
+        "shard": 0,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f5aa0d23][inet[/172.31.3.205:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.11][0]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.11] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.10",
+        "shard": 1,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f5aa0d23][inet[/172.31.3.205:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.10][1]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.10] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.11",
+        "shard": 1,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f821014e][inet[/172.31.1.74:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.11][1]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.11] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.10",
+        "shard": 2,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f5aa0d23][inet[/172.31.3.205:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.10][2]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.10] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.11",
+        "shard": 2,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f5aa0d23][inet[/172.31.3.205:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.11][2]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.11] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.10",
+        "shard": 3,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-a3c15a30][inet[/172.31.1.188:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.10][3]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.10] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.11",
+        "shard": 3,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f5aa0d23][inet[/172.31.3.205:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.11][3]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.11] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.10",
+        "shard": 4,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-a3c15a30][inet[/172.31.1.188:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.10][4]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.10] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      },
+      {
+        "index": "pm-test-static-2016.02.11",
+        "shard": 4,
+        "status": 400,
+        "reason": "RemoteTransportException[[kibana-data-f821014e][inet[/172.31.1.74:9300]][indices:data/read/search[phase/query]]]; nested: SearchParseException[[pm-test-static-2016.02.11][4]: from[-1],size[100]: Parse Failure [Failed to parse source [{\"size\":100,\"query\":{\"query_string\":{\"query\":\"@log_type:\\\"EVENT\\\" +data.event:\\\"product.sold\\\" +data.slug:\\\"starbucks-coffee\\\"\",\"lowercase_expanded_terms\":true,\"analyze_wildcard\":false}}}]]]; nested: QueryParsingException[[pm-test-static-2016.02.11] Strict field resolution and no field mapping can be found for the field with name [@log_type]]; "
+      }
+    ]
+  },
+  "hits": {
+    "total": 40143,
+    "max_score": 24.424223,
+    "hits": [
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfxZ_uQKptlReG8l_T",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:02:12.57-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 192261,
+            "product_id": 4235066,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:02:12.706Z",
+          "host": "sidekiq-v3-3-19-8d9f6a00-60ae-4515-8e99-21a2cc2d7c0c",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "fb419cc9-cf5a-4852-8c60-4eedb0eea05e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfygBQQKptlReG84AY",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:06:58.65-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 774919,
+            "product_id": 4234798,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:06:59.299Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f11a3ba7-7916-4186-be19-08bea43b2769"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfw9jfQKptlReG8d1x",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:00:15.94-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 505955,
+            "product_id": 4234708,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:00:16.088Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "e9127632-b8fc-46ae-9a7a-a275795e7b42"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfznv4QKptlReG9JuI",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:11:52.65-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 445491,
+            "product_id": 4234741,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:11:53.438Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "368cab8a-7c7c-4875-bba7-a8322310b33b"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgB5rvQKptlReGAyOK",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:14:15.97-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 390942,
+            "product_id": 4235039,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:14:16.648Z",
+          "host": "sidekiq-v3-3-19-e7fd3f75-37c3-425f-a167-dd8133abdc30",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f6097ca5-00a3-45b2-9490-36ad0901809f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfxGziQKptlReG8gaJ",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:00:53.18-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 759462,
+            "product_id": 4234833,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:00:53.676Z",
+          "host": "sidekiq-v3-3-19-8d9f6a00-60ae-4515-8e99-21a2cc2d7c0c",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "6a2752bb-dd54-4bea-aa96-0e4e8fcfc66f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgCDtrQKptlReGA1Nc",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:14:57.07-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 673278,
+            "product_id": 4235071,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:14:58.039Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f53fa20e-6661-47a3-bb86-1ed0aea63db6"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgDuRTQKptlReGBO4R",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:22:13.02-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 189021,
+            "product_id": 4234729,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:22:13.808Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "c6b83beb-160f-4a90-9a46-b690428bcae1"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgD9FPQKptlReGBSVC",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:23:14.71-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 536966,
+            "product_id": 4234770,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:23:15.217Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "42dbb781-f05e-4abb-b604-881b2a51bbf1"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf6N9VQKptlReG_AtP",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:40:41.68-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "21.68",
+            "value": "25.0",
+            "discount": "0.133",
+            "seller_id": 1052843,
+            "buyer_id": 1057430,
+            "product_id": 4217425,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:40:42.059Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "772b9d75-a549-4a8c-a2f0-7d897860e436"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf6W0cQKptlReG_Dj6",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:41:18.39-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "21.68",
+            "value": "25.0",
+            "discount": "0.133",
+            "seller_id": 1052843,
+            "buyer_id": 252458,
+            "product_id": 4217161,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:41:18.775Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "00b60892-ab99-4eb3-93ff-c8ead1173c36"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgKcTzQKptlReGDFcs",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:51:34.57-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 211785,
+            "product_id": 4235028,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:51:35.379Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f1113fbd-80b8-44bc-856d-e3488bdaf6d9"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgLTbxQKptlReGDXXa",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:55:20.23-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 678136,
+            "product_id": 4234754,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:55:20.967Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "dfce4fae-4327-436a-a1d4-930616f6468e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf_UBlQKptlReGAMp9",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:02:58.01-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 139194,
+            "product_id": 4234774,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:02:58.264Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "e27d3fc5-ceb8-4a41-8d09-e54761c24711"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgLxzDQKptlReGDfrn",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:57:25.28-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.06",
+            "value": "10.0",
+            "discount": "0.094",
+            "seller_id": 1099548,
+            "buyer_id": 702802,
+            "product_id": 4228063,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:57:25.491Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "bc2ec7c0-5f27-4f19-b3b6-4da56d1f006e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgLxzDQKptlReGDfrs",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:57:25.28-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.06",
+            "value": "10.0",
+            "discount": "0.094",
+            "seller_id": 178409,
+            "buyer_id": 702802,
+            "product_id": 4238831,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:57:25.492Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "eba79692-105b-4c94-9321-7ba01fa03423"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgM7yuQKptlReGD0ri",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:02:27.95-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 432882,
+            "product_id": 4235057,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:02:28.464Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "84519c9f-d2a8-4978-8970-e8e717a9f388"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgXx6fQKptlReGG_gt",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:49:51.92-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 951052,
+            "product_id": 4234824,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:49:51.960Z",
+          "host": "sidekiq-v3-3-19-10021e2f-9e1b-4507-ba22-78c5c336c9a3",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "0ded58b3-9402-4ee9-8f15-2c275953e7d1"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgRn-QQKptlReGFIEL",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:22:58.01-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 273088,
+            "product_id": 4235036,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:22:58.889Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "2282ab63-8209-4381-9dee-09a8032fff58"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgZILtQKptlReGHe3T",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:55:44.73-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 194710,
+            "product_id": 4234831,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:55:45.263Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "4b6800d8-995c-476f-99c6-71746a180bc6"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgUQ-EQKptlReGF5Im",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:34:30.17-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.5",
+            "value": "20.0",
+            "discount": "0.125",
+            "seller_id": 494484,
+            "buyer_id": 788905,
+            "product_id": 4258068,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:34:31.142Z",
+          "host": "sidekiq-v3-3-19-e7fd3f75-37c3-425f-a167-dd8133abdc30",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "6c0c73db-f5d6-4822-94c1-f8f3fc32a3ee"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgU_PTQKptlReGGFnF",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:37:39.43-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 47904,
+            "product_id": 4234797,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:37:40.279Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f9e6cd8f-0080-4d77-aa22-3fab46444f4f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgVA1lQKptlReGGGBt",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:37:47.00-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 599536,
+            "product_id": 4234819,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:37:47.177Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "4d728f1d-1ff6-4dd6-85be-e27117c16fed"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgSV_bQKptlReGFU6R",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:26:06.93-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 530705,
+            "product_id": 4235074,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:26:06.996Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "395e208a-de05-42cc-946a-87d230747f26"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgIP_YQKptlReGCda3",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:42:00.50-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 140203,
+            "product_id": 4235001,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:42:00.653Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "2503ea73-feff-4327-b84c-dc40b23e4fce"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgsGRqQKptlReGNFxt",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:18:37.84-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 219154,
+            "product_id": 4234915,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:18:38.138Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "aa6bfbc9-f2ee-4e8e-a4d7-573d2183e935"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgrqi5QKptlReGM9lt",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:16:44.54-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 265920,
+            "product_id": 4234914,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:16:45.101Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "7c92ced6-af18-40d6-bcf4-920c14ef60fa"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgtuEdQKptlReGNmeP",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:25:43.39-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "21.5",
+            "value": "25.0",
+            "discount": "0.14",
+            "seller_id": 21171,
+            "buyer_id": 387103,
+            "product_id": 3952016,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:25:43.452Z",
+          "host": "sidekiq-v3-3-19-d5b94d37-3acb-4196-94fd-795173860dd7",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "6e6e3690-be12-4fbe-aafd-f2afa462353f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgvUltQKptlReGOCfh",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:32:43.59-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "86.71",
+            "value": "100.0",
+            "discount": "0.133",
+            "seller_id": 1095593,
+            "buyer_id": 423006,
+            "product_id": 4206619,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:32:43.838Z",
+          "host": "sidekiq-v3-3-19-8d9f6a00-60ae-4515-8e99-21a2cc2d7c0c",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "2fe6c73b-824f-4a59-85d9-9c3edd923f6e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgvcf4QKptlReGOGfo",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:33:15.47-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1104319,
+            "product_id": 4234686,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:33:16.142Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f85593eb-546c-4531-b960-c77f2a6deba3"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgvi6YQKptlReGOIkd",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:33:41.46-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1081156,
+            "product_id": 4234940,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:33:42.150Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "e0f108a2-a75e-4d38-b4e6-c02dfca567f0"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgs99yQKptlReGNXE0",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:22:26.06-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 721430,
+            "product_id": 4234928,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:22:26.208Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "9a7b5e18-2400-44be-b293-d3e25cd174d9"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf4VumQKptlReG-gxR",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:32:29.55-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 1103932,
+            "product_id": 4235004,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:32:30.249Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "aafaa660-2cdf-4792-a69b-6ea8ba6a15bd"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJg3q7-QKptlReGQYug",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T15:09:11.39-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 415454,
+            "product_id": 4234931,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T21:09:11.547Z",
+          "host": "sidekiq-v3-3-21-2ff5e44f-43fe-4086-92d4-4dc653c82f4b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "8007d50b-4df2-421f-a7d3-8e2ec41f38bb"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgd2bzQKptlReGJAOj",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:16:22.29-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 372552,
+            "product_id": 4234811,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:16:22.974Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "c113f2e2-c3ac-4b97-a36e-bd9eafb03ad1"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgbHG4QKptlReGIIgJ",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:04:25.09-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 1079096,
+            "product_id": 4258307,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:04:25.553Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "4fa0547c-c10e-4c27-8e33-35db2d832f96"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgew0HQKptlReGJQ7x",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:20:22.44-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 672716,
+            "product_id": 4258319,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:20:22.969Z",
+          "host": "sidekiq-v3-3-19-e7fd3f75-37c3-425f-a167-dd8133abdc30",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "091e1611-67ba-4045-ba03-7144d057a300"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJggbXwQKptlReGJuBu",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:24:43.69-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 93513,
+            "product_id": 4258277,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:24:44.409Z",
+          "host": "sidekiq-v3-3-20-387d507d-e5c2-4370-ac67-24f76647cba5",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "06787a16-43b6-453c-ba48-7c1174021f0c"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgnQhOQKptlReGLr8q",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:57:28.57-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 220520,
+            "product_id": 4234941,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:57:29.186Z",
+          "host": "sidekiq-v3-3-20-4af2c25d-0220-41ab-8ab2-965dc2c339f5",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "13181098-8828-4c57-97d6-6caf525ac0de"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgnQhOQKptlReGLr8v",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:57:28.57-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 220520,
+            "product_id": 4234979,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:57:29.188Z",
+          "host": "sidekiq-v3-3-20-4af2c25d-0220-41ab-8ab2-965dc2c339f5",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "b4e5c835-3e0c-449a-9ded-098043ef1ae8"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgigdAQKptlReGKRP6",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:36:43.05-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 186457,
+            "product_id": 4258288,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:36:43.637Z",
+          "host": "sidekiq-v3-3-19-d5b94d37-3acb-4196-94fd-795173860dd7",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "dc9663ac-f454-40f4-bb12-47f7161835d3"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgSGBJQKptlReGFQ5x",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:25:01.85-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 25023,
+            "product_id": 4235062,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:25:01.981Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "b6141e2f-b38b-499d-87df-67a49d78bfa9"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgb0qvQKptlReGIVbk",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:07:31.47-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 579607,
+            "product_id": 4258261,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:07:31.723Z",
+          "host": "sidekiq-v3-3-19-e7fd3f75-37c3-425f-a167-dd8133abdc30",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "da3376fe-7169-4f38-b392-9c2e5a5e100c"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgn3sxQKptlReGL21I",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:00:09.85-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1078175,
+            "product_id": 4234913,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:00:10.484Z",
+          "host": "sidekiq-v3-3-20-1161804a-0295-4e51-9686-8736e9d72cff",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "5b8a74be-efb8-4d8b-bce1-efdcbc6dffd6"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgn3sxQKptlReGL21N",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:00:09.86-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1078175,
+            "product_id": 4234957,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:00:10.486Z",
+          "host": "sidekiq-v3-3-20-1161804a-0295-4e51-9686-8736e9d72cff",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "6296af5a-86a9-4a5f-b2f7-87ef045502ff"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgnhmtQKptlReGLwRA",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:58:38.82-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 639851,
+            "product_id": 4235091,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:58:39.453Z",
+          "host": "sidekiq-v3-3-20-50105ea7-27cd-4a8e-ae24-41759ab63beb",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "8254b93e-9ae0-43d5-93ec-45ff67e71b4b"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgp9ZYQKptlReGMfmS",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:09:16.97-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 178428,
+            "product_id": 4234912,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:09:17.740Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "cd1d7e93-0298-44cf-b5b0-84c6c7301446"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhG3S4QKptlReGXvUP",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:15:34.18-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 240356,
+            "product_id": 4224231,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:15:34.789Z",
+          "host": "sidekiq-v3-3-21-53b2f497-8a32-4cf0-adf5-f8de6936193d",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "09f1d6cf-183c-41fa-8df2-7961efa87b4e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJg0cCoQKptlReGPm4j",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:54:55.91-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.07",
+            "value": "10.0",
+            "discount": "0.093",
+            "seller_id": 516984,
+            "buyer_id": 1104359,
+            "product_id": 4215909,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:54:56.583Z",
+          "host": "sidekiq-v3-3-21-6308f155-e2dd-4b99-b8cf-74fe9c65aacb",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "190b0d10-639d-47be-ad7d-687a2028350a"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhBK7YQKptlReGUw3r",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T15:50:42.08-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 1038205,
+            "product_id": 4234767,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T21:50:42.685Z",
+          "host": "sidekiq-v3-3-21-55feacce-f31a-4fa4-aa9b-fdeac6fdc1dc",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "2127e0bd-d278-419d-b9d2-3e38b6cf4db3"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhFZsPQKptlReGXBN2",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:09:10.86-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 281741,
+            "product_id": 4224218,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:09:11.161Z",
+          "host": "sidekiq-v3-3-21-6308f155-e2dd-4b99-b8cf-74fe9c65aacb",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "767f053a-56ff-482e-bbfd-727227300e32"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhHJJvQKptlReGX4XZ",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:16:48.35-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "18.2",
+            "value": "21.0",
+            "discount": "0.133",
+            "seller_id": 494484,
+            "buyer_id": 1104489,
+            "product_id": 4224192,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:16:48.376Z",
+          "host": "sidekiq-v3-3-21-a3db0d30-5454-4971-a283-bc84451509b4",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "0a029a74-78a1-4fdb-a655-742330341735"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhHVlIQKptlReGX98u",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:17:37.70-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 127755,
+            "product_id": 4224208,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:17:38.400Z",
+          "host": "sidekiq-v3-3-21-a3db0d30-5454-4971-a283-bc84451509b4",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "08c1547c-603a-423c-95a8-21dda6de092f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhLpLiQKptlReGaM_n",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:36:27.24-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 762138,
+            "product_id": 4235034,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:36:28.157Z",
+          "host": "sidekiq-v3-3-21-53b2f497-8a32-4cf0-adf5-f8de6936193d",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "b0ad4f0c-a1b9-4d1c-880a-c0894363c396"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJg637WQKptlReGRh9z",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T15:23:11.43-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 426148,
+            "product_id": 4235107,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T21:23:12.172Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "22a28b70-86b1-4e5e-aeed-3506257a2fac"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJg_J4PQKptlReGTq_J",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T15:41:53.99-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 96667,
+            "product_id": 4224186,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T21:41:54.084Z",
+          "host": "sidekiq-v3-3-21-6bb94662-13e5-480c-b2eb-1c052d8d355a",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "49523d94-2cd8-4d2e-8976-e249c73b3023"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJg87_fQKptlReGSa-D",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T15:32:12.20-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.06",
+            "value": "10.0",
+            "discount": "0.094",
+            "seller_id": 91627,
+            "buyer_id": 114699,
+            "product_id": 4231186,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T21:32:12.949Z",
+          "host": "sidekiq-v3-3-19-8d9f6a00-60ae-4515-8e99-21a2cc2d7c0c",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "8a8846f5-fdd8-4206-8f1b-92a2e858b101"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhW8wVQKptlReGfCGd",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T17:25:51.01-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 575525,
+            "product_id": 4234996,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T23:25:51.267Z",
+          "host": "sidekiq-v3-3-21-55feacce-f31a-4fa4-aa9b-fdeac6fdc1dc",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "add15107-76c3-4d9f-8d67-384c5598ef04"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhT_CnQKptlReGdzwo",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T17:12:53.94-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 1061612,
+            "product_id": 4235009,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T23:12:54.867Z",
+          "host": "sidekiq-v3-3-21-ca78e275-228e-40ae-b4f5-1c870f9f23be",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "20560031-6787-4330-b888-2c561827ebd7"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhKefiQKptlReGZl35",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:31:21.65-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 851161,
+            "product_id": 4234871,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:31:22.288Z",
+          "host": "sidekiq-v3-3-21-2ff5e44f-43fe-4086-92d4-4dc653c82f4b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "adee632c-3df4-4817-a99c-8d0f81f3711a"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhK5JLQKptlReGZyxk",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:33:11.03-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 199398,
+            "product_id": 4234745,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:33:11.104Z",
+          "host": "sidekiq-v3-3-21-6bb94662-13e5-480c-b2eb-1c052d8d355a",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "8fbba345-1044-44d7-a4b7-17764924050a"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhOZMbQKptlReGbae5",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T16:48:27.93-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 243492,
+            "product_id": 4234771,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T22:48:28.682Z",
+          "host": "sidekiq-v3-3-21-571d8706-9221-4597-9caa-b74205d1fcdd",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "d338de03-e8fb-43a5-9f7a-6c16d31e4e6f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhTGgBQKptlReGdd8v",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T17:09:01.52-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 344860,
+            "product_id": 4224214,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T23:09:02.438Z",
+          "host": "sidekiq-v3-3-21-161c5a32-100a-4a6e-a1a0-f46bb3d84b95",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "f6b05e05-aff3-499b-874b-61f64644794d"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhZVLfQKptlReGgErK",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T17:36:15.13-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 383842,
+            "product_id": 4235012,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T23:36:15.809Z",
+          "host": "sidekiq-v3-3-21-a3db0d30-5454-4971-a283-bc84451509b4",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "d3f93af7-099e-4544-b412-a7e6bcf09e01"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhbKKsQKptlReGg03i",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T17:44:14.79-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 276589,
+            "product_id": 4235029,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T23:44:14.927Z",
+          "host": "sidekiq-v3-3-21-161c5a32-100a-4a6e-a1a0-f46bb3d84b95",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "0f447180-998b-4937-af0a-b68c99bccf76"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJhcbbkQKptlReGhSql",
+        "_score": 24.424223,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T17:49:48.07-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.59",
+            "value": "26.0",
+            "discount": "0.131",
+            "seller_id": 1004952,
+            "buyer_id": 7226,
+            "product_id": 4234783,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T23:49:48.387Z",
+          "host": "sidekiq-v3-3-21-ca78e275-228e-40ae-b4f5-1c870f9f23be",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "43c8d7c5-104f-4f8d-b02c-7a25be20a55c"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfuH1EQKptlReG7vXm",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T09:47:51.56-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 609634,
+            "product_id": 4234790,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T15:47:51.635Z",
+          "host": "sidekiq-v3-3-19-10021e2f-9e1b-4507-ba22-78c5c336c9a3",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "6660c79e-32d7-4868-871c-f7b5032bbf42"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfvoQ2QKptlReG8I47",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T09:54:25.82-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 389108,
+            "product_id": 4235050,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T15:54:26.438Z",
+          "host": "sidekiq-v3-3-19-d5b94d37-3acb-4196-94fd-795173860dd7",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "55b21bfa-85cc-47db-86bb-ddac550ba2dc"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfvjm5QKptlReG8HoT",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T09:54:07.65-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 1103819,
+            "product_id": 4234736,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T15:54:07.923Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "e7796e5a-8020-428f-be69-9bf5ae245b5b"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf2tzqQKptlReG-FCp",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:25:23.98-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 268098,
+            "product_id": 4234712,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:25:24.255Z",
+          "host": "sidekiq-v3-3-19-8d9f6a00-60ae-4515-8e99-21a2cc2d7c0c",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "ce77f4bd-7d33-4b29-a7c5-7e5eab99aed0"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf2CYiQKptlReG92S0",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:22:26.60-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 831725,
+            "product_id": 4234727,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:22:26.775Z",
+          "host": "sidekiq-v3-3-19-6069fa35-a54e-40f2-bd9e-45bcd5ff1aca",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "b357076a-bbae-4c08-8da5-cab2185ca604"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf7L2rQKptlReG_PjK",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:44:55.29-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 22916,
+            "product_id": 4235011,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:44:55.560Z",
+          "host": "sidekiq-v3-3-19-d5b94d37-3acb-4196-94fd-795173860dd7",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "40d42c9a-5b0b-4a6d-b6d1-5b6fac405b7f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf65qzQKptlReG_LcP",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:43:41.96-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "21.68",
+            "value": "25.0",
+            "discount": "0.133",
+            "seller_id": 1052843,
+            "buyer_id": 364508,
+            "product_id": 4217210,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:43:42.147Z",
+          "host": "sidekiq-v3-3-19-10021e2f-9e1b-4507-ba22-78c5c336c9a3",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "732e7b2b-f421-443d-ad2a-b07f3044554e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf8vYEQKptlReG_mb9",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:51:44.15-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "21.68",
+            "value": "25.0",
+            "discount": "0.133",
+            "seller_id": 1052843,
+            "buyer_id": 322989,
+            "product_id": 4217164,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:51:44.193Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "c6e2e7a0-dc44-43ac-b51e-c668a08fa7ac"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJf4GPmQKptlReG-bwa",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:31:26.07-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 877263,
+            "product_id": 4234715,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:31:26.230Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "9619a574-f82f-4b5c-b2ba-b7e486b6c63b"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgDuRTQKptlReGBO4T",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:22:13.02-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 189021,
+            "product_id": 4234851,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:22:13.808Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "88d6d840-5e81-4fbf-ab85-41b4f881704d"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgDxGEQKptlReGBPfJ",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:22:24.97-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 61342,
+            "product_id": 4234724,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:22:25.929Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "e144b55a-db08-4fc8-8581-fb7465159fd5"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgEFerQKptlReGBUZa",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:23:48.42-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 73554,
+            "product_id": 4234732,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:23:48.811Z",
+          "host": "sidekiq-v3-3-19-6069fa35-a54e-40f2-bd9e-45bcd5ff1aca",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "cb1b540e-5361-4753-8100-7f6b709d07ed"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgC0SyQKptlReGBARP",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:18:17.02-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 246420,
+            "product_id": 4234867,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:18:17.182Z",
+          "host": "sidekiq-v3-3-19-d5b94d37-3acb-4196-94fd-795173860dd7",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "6ef97411-331c-432a-9c97-83d427cbd41c"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgI2YRQKptlReGCpxF",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:44:37.91-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 777250,
+            "product_id": 4234748,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:44:38.346Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "c439fa89-ef6c-414a-b9fc-7040608a5cdb"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgIYZtQKptlReGChpH",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:42:34.53-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.5",
+            "value": "20.0",
+            "discount": "0.125",
+            "seller_id": 494484,
+            "buyer_id": 1104060,
+            "product_id": 4258238,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:42:35.209Z",
+          "host": "sidekiq-v3-3-19-e7fd3f75-37c3-425f-a167-dd8133abdc30",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "616e07f2-5218-4ffc-b8a7-dce1d98b3371"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJfzcVZQKptlReG9GUR",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T10:11:05.27-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 321724,
+            "product_id": 4234788,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T16:11:06.255Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "9566e61a-ece1-489f-a05f-8dfadf03ac55"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgM7yuQKptlReGD0rf",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:02:27.95-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 432882,
+            "product_id": 4234772,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:02:28.464Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "198d029a-650a-4e05-8aea-0e3a0c0b2726"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgNHRCQKptlReGD6hL",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:03:14.83-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 708523,
+            "product_id": 4234804,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:03:15.585Z",
+          "host": "sidekiq-v3-3-19-e7fd3f75-37c3-425f-a167-dd8133abdc30",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "60176e09-4a70-41e0-976e-aa97d485a5a0"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgLxzDQKptlReGDfrq",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:57:25.28-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.06",
+            "value": "10.0",
+            "discount": "0.094",
+            "seller_id": 1045144,
+            "buyer_id": 702802,
+            "product_id": 4233332,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:57:25.492Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "7419c879-cf3f-4149-b1f8-61e3306ee730"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgLxzDQKptlReGDfrv",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:57:25.29-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.05",
+            "value": "10.0",
+            "discount": "0.095",
+            "seller_id": 707790,
+            "buyer_id": 702802,
+            "product_id": 4252909,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:57:25.493Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "e4cac3ec-99ae-4fca-ae08-7d1b5000591c"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgOlpUQKptlReGETEr",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:09:41.70-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 717837,
+            "product_id": 4234779,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:09:42.113Z",
+          "host": "sidekiq-v3-3-19-10021e2f-9e1b-4507-ba22-78c5c336c9a3",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "609de4be-b794-4349-879b-701d5e8fcc6e"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgM3RmQKptlReGDyVT",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:02:10.41-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 1104098,
+            "product_id": 4235045,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:02:10.586Z",
+          "host": "sidekiq-v3-3-19-520d8eae-eb5f-414d-99c5-7f5d5f91d2e6",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "4373bebe-4882-4a72-abb2-6486f74f583a"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgLTbxQKptlReGDXXc",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T11:55:20.24-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 678136,
+            "product_id": 4235008,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T17:55:20.968Z",
+          "host": "sidekiq-v3-3-19-5651e589-6a00-4b66-8cf9-191cf52ca00b",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "32ec503b-88d7-4835-a81f-e3e4afc252fd"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgn3sxQKptlReGL21L",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:00:09.86-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1078175,
+            "product_id": 4234937,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:00:10.485Z",
+          "host": "sidekiq-v3-3-20-1161804a-0295-4e51-9686-8736e9d72cff",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "3f1ea00e-ba90-4f25-81f5-413e0e49d450"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgn3sxQKptlReGL21Q",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:00:09.86-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1078175,
+            "product_id": 4235116,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:00:10.486Z",
+          "host": "sidekiq-v3-3-20-1161804a-0295-4e51-9686-8736e9d72cff",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "4b7ccd2c-1c48-4d29-a0b4-e81742e0f0ca"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgn6SqQKptlReGL3js",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:00:19.87-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 929210,
+            "product_id": 4234994,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:00:20.334Z",
+          "host": "sidekiq-v3-3-19-10021e2f-9e1b-4507-ba22-78c5c336c9a3",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "1424388d-9cec-4245-ac66-7ab93b5a6f13"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgoBpUQKptlReGL6Dp",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:00:49.90-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 1104275,
+            "product_id": 4234910,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:00:50.684Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "b00dbc5b-06ff-4e2c-b18b-b1cf027b54fe"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgpcviQKptlReGMXEr",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:07:04.15-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "9.06",
+            "value": "10.0",
+            "discount": "0.094",
+            "seller_id": 235243,
+            "buyer_id": 637230,
+            "product_id": 4244957,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:07:04.192Z",
+          "host": "sidekiq-v3-3-19-6069fa35-a54e-40f2-bd9e-45bcd5ff1aca",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "861aa7d5-6203-48b0-a959-c5fa68712dc0"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgjoB0QKptlReGKidO",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:41:37.62-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 219526,
+            "product_id": 4258300,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:41:37.725Z",
+          "host": "sidekiq-v3-3-19-d5b94d37-3acb-4196-94fd-795173860dd7",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "8235568d-34e2-4444-961e-e2d8e7eea702"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgqJ0gQKptlReGMirn",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T14:10:08.83-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.62",
+            "value": "26.0",
+            "discount": "0.13",
+            "seller_id": 1004952,
+            "buyer_id": 512456,
+            "product_id": 4200149,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T20:10:08.911Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "b9990e42-6e69-40d8-b7a2-d523ac9bae8b"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgRn-QQKptlReGFIEJ",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:22:58.01-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 273088,
+            "product_id": 4234782,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:22:58.888Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "1258541e-1589-4dac-a186-8e968cbd7a4f"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgRpsKQKptlReGFIep",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:23:05.85-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 1097599,
+            "product_id": 4234795,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:23:05.892Z",
+          "host": "sidekiq-v3-3-19-3c24112b-bd11-43bc-8d8e-17098d252094",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "5e6b0b11-e72a-429d-9859-bdf3fb828206"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgd2bzQKptlReGJAOl",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T13:16:22.29-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "17.3",
+            "value": "20.0",
+            "discount": "0.135",
+            "seller_id": 494484,
+            "buyer_id": 372552,
+            "product_id": 4258268,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T19:16:22.974Z",
+          "host": "sidekiq-v3-3-19-1e397859-1592-4fb7-a62e-d0334aba70e8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "08281162-05b1-4bff-816f-930b1717f0e9"
+        }
+      },
+      {
+        "_index": "logstash-2016.01.20",
+        "_type": "logs",
+        "_id": "AVJgUrVPQKptlReGGAM5",
+        "_score": 24.388176,
+        "_source": {
+          "@log_type": "EVENT",
+          "@log_version": "0.1.0",
+          "timestamp": "2016-01-20T12:36:18.83-06:00",
+          "data": {
+            "event": "product.sold",
+            "brand": 109,
+            "slug": "starbucks-coffee",
+            "price": "22.56",
+            "value": "26.0",
+            "discount": "0.132",
+            "seller_id": 1004952,
+            "buyer_id": 420449,
+            "product_id": 4234792,
+            "electronic": true
+          },
+          "flags": [
+            "event"
+          ],
+          "@version": "1",
+          "@timestamp": "2016-01-20T18:36:19.140Z",
+          "host": "sidekiq-v3-3-19-2db18036-ae0c-4e23-9741-52f2de8cb8d8",
+          "path": "/var/www/giftcards/shared/log/events.log",
+          "@uuid": "1e1fb019-993a-4f09-a8c7-49952e07bc9e"
+        }
+      }
+    ]
+  }
+}
